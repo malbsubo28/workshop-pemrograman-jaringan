@@ -13,5 +13,7 @@ elif 41 <= nilai <= 55: kriteria = 'D'; bobot = 1; kategori = "Kurang"
 elif 0 <= nilai <= 40: kriteria = 'E'; bobot = 0; kategori = "Sangat kurang"
 else: info="Nilai harus dalam range 0 - 100 !!!"
 
-if info == "": print("Kriteria nilai =", kriteria, "\n" + "Bobot =", bobot,"\n" + "Kategori =", kategori)
+if info == "":
+  print("Kriteria nilai =", kriteria, "\n" +
+        "Bobot =", bobot,"\n" + "Kategori =", kategori)
 else: print(info)

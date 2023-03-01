@@ -1,8 +1,8 @@
 ordo = input("Masukkan ordo matriks [ex.3x3,3x2...] : ")
 baris_kolom = []
-matriks_a = [[], []]
-matriks_b = [[], []]
-hasil_matriks = [[], []]
+matriks_a = []
+matriks_b = []
+hasil_matriks = []
 
 for i in ordo.split('x'):
   baris_kolom.append(int(i))
@@ -15,13 +15,14 @@ for data in range(2):
   for i in range(baris_kolom[0]):
     for j in range(baris_kolom[1]):
       print(matriks,"[",i+1,"][",j+1,"] = ", sep='', end='')
-      if data == 0: matriks_a[i].append(float(input()))
-      else: matriks_b[i].append(float(input()))
+      if data == 0: matriks_a.append([]); matriks_a[i].append(float(input()))
+      else: matriks_b.append([]); matriks_b[i].append(float(input()))
 
 # penjumlahan kedua matriks
 for i in range(baris_kolom[0]):
   for j in range(baris_kolom[1]):
     hasil = matriks_a[i][j] + matriks_b[i][j]
+    hasil_matriks.append([])
     hasil_matriks[i].append(hasil)
 
 # output matriks

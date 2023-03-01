@@ -18,4 +18,6 @@ modus = statistics.mode(data)
 # nilai median
 median = statistics.median(data)
 
-print("Rata-rata =", rata_rata , "\nModus =", modus, "\nMedian =", median)
+print("Rata-rata =", rata_rata,
+      "\nModus =", modus,
+      "\nMedian =", median)
