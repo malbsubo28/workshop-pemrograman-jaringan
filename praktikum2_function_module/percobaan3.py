@@ -1,5 +1,5 @@
-from percobaan3_module import hitung_bilangan
+import percobaan3_module
 
 bilangan = input("Masukkan data pisahkan dengan ',' : ")
 
-hitung_bilangan(bilangan)
+percobaan3_module.hitung_bilangan(bilangan)

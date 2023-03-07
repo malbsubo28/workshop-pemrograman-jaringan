@@ -1,3 +1,6 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
 nilai_akhir = []
 nilai_huruf = []
 
@@ -31,3 +34,20 @@ def output(jumlah_data, data):
           nilai_huruf[i],"\t  │")
   print("╰────────────────────────────────────" +
         "─────────────────────────────────────╯")
+
+  n_a=0; n_ab=0; n_b=0; n_bc=0; n_c=0; n_d=0; n_e=0
+
+  for i in nilai_huruf:
+    if i == "A": n_a += 1
+    elif i == "AB": n_ab += 1
+    elif i == "B": n_b += 1
+    elif i == "BC": n_bc += 1
+    elif i == "C": n_c += 1
+    elif i == "D": n_d += 1
+    elif i == "E": n_e += 1
+
+  x = np.array([ "A", "AB", "B", "BC", "C", "D", "E"])
+  y = np.array([ n_a, n_ab, n_b, n_bc, n_c, n_d, n_e])
+
+  plt.bar(x, y)
+  plt.show()

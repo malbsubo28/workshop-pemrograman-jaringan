@@ -6,7 +6,7 @@ def hitung_bilangan(bilangan):
     else: genap.append(int(i))
 
   if ganjil.__len__() != 0:
-    print("Jumlah bilangan genap :",
+    print("Jumlah bilangan ganjil :",
           ganjil.__len__(), "yaitu ", end="")
     for i in ganjil:
       print(i, "", end="")

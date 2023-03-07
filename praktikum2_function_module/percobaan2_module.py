@@ -22,4 +22,3 @@ def hitung_total(jumlah_barang, nama_barang, banyak_barang):
     total_harga += harga[i]
 
   print("Total pembelian :", total_harga)
-
